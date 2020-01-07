@@ -50,12 +50,14 @@
     right: 0px;
     top: 8vh;
     flex-direction: column;
-    transform: translateX(100%);
-    background: #8a8a8a96;
-    transition: transform 0.2s linear, opacity 0.2s linear;
+    transform: translateY(-100%);
+    background: transparent;
+    transition: transform 0.2s linear, opacity 0.2s linear,
+      visibility 0.2s linear, height 0.2s linear, background-color 0.2s linear;
     opacity: 0;
     overflow: hidden;
-    height: 92vh;
+    visibility: hidden;
+    height: 0px;
     width: 100%;
     z-index: 1000;
   }
@@ -104,9 +106,12 @@
 }
 
 .nav-active {
-  transform: translateX(0%);
+  transform: translateY(0%);
   opacity: 1;
+  height: 92vh;
+  visibility: visible;
+  background: #6b6b6b96;
 }
 .header-active {
-  background: #8a8a8a96;
+  background: #6b6b6b96;
 }
