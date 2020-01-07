@@ -14,61 +14,68 @@ body {
 
 header {
   width: 100vw;
-  height: 95vh;
   background: linear-gradient(to bottom, #000000a9, #000000a9),
     url(./images/Foreground.png);
   background-size: cover;
   clip-path: polygon(0 0, 0 80vh, 50% 100%, 100% 80vh, 100% 0);
+  height: 95vh;
 }
 
 #real-header {
   display: flex;
   padding-left: 10%;
   padding-right: 10%;
-  padding-top: 20px;
   align-items: center;
+  padding-top: 20px;
   margin-bottom: 10vh;
-}
-#real-header img {
-  width: 120px;
+  height: 9vh;
 }
 
-#real-header nav {
-  padding-left: 7.32%;
-  width: 100%;
+#real-header > a {
+  height: 100%;
+}
+.logo {
+  vertical-align: middle;
+  height: 100%;
+}
+.nav-links {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  height: 100%;
+  padding-left: 7.32%;
+  width: 100%;
 }
 
-#real-header nav a {
+.nav-links a {
+  position: relative;
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
   transition: color 0.3s ease-out;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
-  text-align: center;
   white-space: nowrap;
+  height: 100%;
 }
 
-#real-header nav a:hover {
+.nav-links a:hover {
   color: #e74c3c;
 }
 
-#real-header nav a::after {
+.nav-links a::after {
+  position: absolute;
   content: "";
   display: block;
   width: 100%;
   height: 1px;
   background-color: #e74c3c;
-  margin-top: 22px;
   opacity: 0;
+  top: 100%;
   transition: opacity 0.3s ease-out;
 }
 
-#real-header nav a:hover::after {
+.nav-links a:hover::after {
   opacity: 1;
 }
 
@@ -114,7 +121,6 @@ header h1 {
 
 header h2 {
   font-family: "Open Sans", sans-serif;
-  font-size: 4.1vw;
   text-align: center;
   text-transform: uppercase;
   font-weight: 700;
@@ -180,21 +186,16 @@ button {
 
 .red_button {
   background: #e74c3c;
+  transition: background 0.1s linear;
 }
 .red_button:hover {
   background: #e73c29;
 }
 
 .red_button:active {
-  animation: button_click 0.1s linear 0s 1;
+  background: #e62712;
 }
 
-@keyframes button_click {
-  from {
-  }
-  to {
-  }
-}
 .learn_more {
   border: 1px solid #f4f5f9;
 }
