@@ -1,6 +1,7 @@
 .cards {
   display: grid;
-  grid-template-columns: repeat(4, 20%);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 30px;
   width: 100%;
   align-items: center;
   justify-content: space-between;
@@ -14,16 +15,27 @@
 }
 .card_logo {
   width: 74px;
-  border: 1px solid #e5e5e5;
   height: 74px;
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: center;
   margin-bottom: 25px;
+}
+.card_logo-border {
+  position: absolute;
+  background: transparent;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid #e5e5e5;
   transition: border 0.2s linear, transform 0.2s linear;
 }
 .card_logo > img {
   transition: transform 0.2s linear;
+  height: 60%;
+  width: 60%;
 }
 .card_name {
   font-family: "Open Sans", sans-serif;
@@ -40,4 +52,13 @@
   width: 100%;
   text-align: center;
   color: #999999;
+}
+
+.card:hover .card_logo-border {
+  transform: rotate(-135deg);
+  border-color: #e74c3c;
+}
+
+.card:hover .card_name {
+  color: #e74c3c;
 }

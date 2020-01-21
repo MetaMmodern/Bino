@@ -112,8 +112,9 @@
   opacity: 1;
   height: 92vh;
   visibility: visible;
-  background: #6b6b6b96;
+  background: #47474796;
+  backdrop-filter: blur(2px);
 }
 .header-active {
-  background: #6b6b6b96;
+  background: #47474796;
 }

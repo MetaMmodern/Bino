@@ -52,7 +52,7 @@ header {
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
-  transition: color 0.3s ease-out;
+  transition: color 0.3s ease-out, background 0.3s ease-out;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   white-space: nowrap;
@@ -77,6 +77,13 @@ header {
 
 .nav-links a:hover::after {
   opacity: 1;
+}
+#boots:hover {
+  color: #563d7c;
+  background-color: rgba(255, 255, 255, 0.795);
+}
+#boots:hover::after {
+  background-color: #563d7c;
 }
 
 .anchor {
