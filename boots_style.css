@@ -75,13 +75,24 @@
   border: 1px solid #e5e5e5;
   transition: border 0.2s linear, transform 0.2s linear;
 }
-.card-title {
+.card-title-hover {
   transition: color 0.2s linear;
 }
-.card:hover .card-title {
+.card:hover .card-title-hover {
   color: #e74c3c;
 }
 .card:hover .card_logo-border {
   transform: rotate(-135deg);
   border-color: #e74c3c;
+}
+
+.monitor {
+  clip-path: none;
+  margin: auto;
+}
+@media (max-width: 992px) {
+  .monitor {
+    clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
+    margin-right: -35%;
+  }
 }
