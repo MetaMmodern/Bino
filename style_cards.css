@@ -1,17 +1,20 @@
 .cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: 30px;
+  display: flex;
+  flex-direction: row;
   width: 100%;
   align-items: center;
   justify-content: space-between;
   padding: 0px 10%;
   margin-bottom: 255px;
+  flex-wrap: wrap;
 }
+
 .card {
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex: 0 0 25%;
+  max-width: 25%;
 }
 .card_logo {
   width: 74px;
@@ -39,7 +42,7 @@
 }
 .card_name {
   font-family: "Open Sans", sans-serif;
-  font-size: 1.9vw;
+  font-size: 2vw;
   text-align: center;
   /* white-space: nowrap; */
   width: 100%;
@@ -49,7 +52,7 @@
   color: #6a6a6a;
 }
 .card_info {
-  width: 100%;
+  width: 90%;
   text-align: center;
   color: #999999;
 }
@@ -61,4 +64,28 @@
 
 .card:hover .card_name {
   color: #e74c3c;
+}
+
+.delimeter {
+  display: none;
+}
+@media (max-width: 768px) {
+  .delimeter {
+    width: 100% !important;
+    display: block;
+  }
+  .card {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .card:nth-child(1) {
+    margin-bottom: 50px;
+  }
+  .card:nth-child(2) {
+    margin-bottom: 50px;
+  }
+  .card_name {
+    font-family: "Open Sans", sans-serif;
+    font-size: 3.5vw;
+  }
 }
