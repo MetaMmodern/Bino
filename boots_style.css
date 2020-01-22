@@ -135,9 +135,20 @@
   }
 }
 .squared {
+  background-color: #fff;
   width: 100%;
   padding-bottom: 100%;
   background-size: 60%;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.service-1 {
+  background-image: url("./images/services/monitor.svg");
+}
+.service-2 {
+  background-image: url("./images/services/layers.svg");
+}
+.service-3 {
+  background-image: url("./images/services/camera.svg");
 }
