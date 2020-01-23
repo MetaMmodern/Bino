@@ -87,12 +87,12 @@
     </nav>
     <div
       id="carouselExampleControls"
-      class="carousel slide mh-100 carousel-clipped mb-5"
+      class="carousel slide mh-100 carousel-clipped mb-5 pointer-event"
       data-ride="carousel"
     >
       <div class="carousel-inner  mh-100">
         <div
-          class="carousel-item active  mh-100"
+          class="carousel-item mh-100 carousel-item-next carousel-item-left"
           style="background-image: url(./images/Foreground.png); height: 95vh; background-size: cover;"
         >
           <div
@@ -110,7 +110,7 @@
           </div>
         </div>
         <div
-          class="carousel-item  mh-100"
+          class="carousel-item mh-100"
           style="background-image: url(./images/Foreground.png); height: 95vh; background-size: cover;"
         >
           <div
@@ -128,7 +128,7 @@
           </div>
         </div>
         <div
-          class="carousel-item  mh-100"
+          class="carousel-item mh-100 active carousel-item-left"
           style="background-image: url(./images/Foreground.png); height: 95vh; background-size: cover;"
         >
           <div
@@ -169,7 +169,7 @@
       <img src="./images/anchor.svg" alt="anchor" />
     </div>
     <div class="container mb-5">
-      <div class="row row-centered">
+      <div class="row">
         <div class="col-md-3 col-6">
           <div class="card text-center border-0 align-items-center">
             <div
@@ -197,7 +197,7 @@
         <div class="col-md-3 col-6">
           <div class="card text-center border-0 align-items-center">
             <div
-              <div
+              <div=""
               style="width: 74px; height: 74px; position: relative;"
               class="d-flex align-items-center justify-content-center"
             >
@@ -247,7 +247,7 @@
         <div class="col-md-3 col-6">
           <div class="card text-center border-0 align-items-center">
             <div
-              <div
+              <div=""
               style="width: 74px; height: 74px; position: relative;"
               class="d-flex align-items-center justify-content-center"
             >
@@ -315,103 +315,148 @@
         </div>
       </div>
     </div>
-    <div class="container-fluid pt-3" style="background-color: #202020;">
-      <div class="rows text-left text-lg-right">
-        <div class="col-12">
-          <div class="col-11">
-            <h3 class=" text-uppercase text-light services_title">
-              Our Services
-            </h3>
+    <div
+      class="container-fluid pt-3 pb-3 pt-md-4 pb-md-4 d-flex"
+      style="background-color: #202020;"
+    >
+      <div class="row">
+        <div
+          class="col-1 slider_controls d-none d-lg-flex align-items-center justify-content-center w-100"
+        >
+          <ol class="carousel-indicators carousel-custom-indicators">
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="0"
+              class="active_service"
+            ></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+        </div>
+        <div class="col-12 col-lg-5 text-sm-right w-100">
+          <div class="row h-100">
+            <div class="col-12">
+              <div class="row">
+                <div class="col-11">
+                  <h3 class=" text-uppercase text-light services_title">
+                    Our Services
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="row">
+                <div class="col-12 d-flex services_card">
+                  <div
+                    class="col-2 d-flex align-items-center justify-content-center pl-0 pr-0 order-sm-2 service_col"
+                  >
+                    <div class="squared rounded-circle service-1"></div>
+                  </div>
+                  <div class="col-10 col-sm-11">
+                    <div
+                      class="card w-100 border-0  "
+                      style="background-color: #202020;"
+                    >
+                      <div class="card-body">
+                        <div
+                          class="card-title text-uppercase font-weight-bold"
+                          style="color: #e74c3c;"
+                        >
+                          Web Design
+                        </div>
+                        <div
+                          class="card-text text-light"
+                          style="font-size: 0.875rem;"
+                        >
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry. Lorem Ip sum has been the
+                          industry's standard dummy text ever.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 d-flex services_card">
+                  <div
+                    class="col-2 d-flex align-items-center justify-content-center pl-0 pr-0 order-sm-2 service_col"
+                  >
+                    <div class="squared rounded-circle service-2"></div>
+                  </div>
+                  <div class="col-10 col-sm-11">
+                    <div
+                      class="card w-100 border-0"
+                      style="background-color: #202020;"
+                    >
+                      <div class="card-body">
+                        <div
+                          class="card-title text-uppercase font-weight-bold"
+                          style="color: #e74c3c;"
+                        >
+                          Print Design
+                        </div>
+                        <div class="card-text text-light">
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry. Lorem Ip sum has been the
+                          industry's standard dummy text ever.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 d-flex services_card">
+                  <div
+                    class="col-2 d-flex align-items-center justify-content-center pl-0 pr-0 order-sm-2 service_col"
+                  >
+                    <div class="squared rounded-circle service-3"></div>
+                  </div>
+                  <div class="col-10 col-sm-11">
+                    <div
+                      class="card w-100 border-0"
+                      style="background-color: #202020;"
+                    >
+                      <div class="card-body">
+                        <div
+                          class="card-title text-uppercase font-weight-bold"
+                          style="color: #e74c3c;"
+                        >
+                          Photography
+                        </div>
+                        <div class="card-text text-light">
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry. Lorem Ip sum has been the
+                          industry's standard dummy text ever.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col-12">
-          <div class="col-12 d-flex services_card">
+        <div
+          id="carouselExampleIndicators"
+          class="col-5 col-sm-1 col-md-6 carousel slide w-100 d-none d-lg-block pr-0 pl-0"
+          data-ride="carousel"
+          style="
+            margin-top: -1.5rem;
+            margin-bottom: -1.5rem;
+            margin-right: 0rem;
+            z-index: 1;"
+        >
+          <div class="carousel-inner h-100">
             <div
-              class="col-2 d-flex align-items-center justify-content-center pl-0 pr-0"
-            >
-              <div
-                class="squared rounded-circle service-1"
-              ></div>
-            </div>
-            <div class="col-10">
-              <div
-                class="card w-100 border-0"
-                style="background-color: #202020;"
-              >
-                <div class="card-body">
-                  <div
-                    class="card-title text-uppercase font-weight-bold"
-                    style="color: #e74c3c;"
-                  >
-                    Web Design
-                  </div>
-                  <div class="card-text text-light">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ip sum has been the industry's
-                    standard dummy text ever.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 d-flex services_card">
+              class="carousel-item h-100 active"
+              style="background-image: url('./images/services/web.png'); background-size: cover; background-position: center;"
+            ></div>
             <div
-              class="col-2 d-flex align-items-center justify-content-center pl-0 pr-0"
-            >
-              <div
-                class="squared rounded-circle service-2"
-              ></div>
-            </div>
-            <div class="col-10">
-              <div
-                class="card w-100 border-0"
-                style="background-color: #202020;"
-              >
-                <div class="card-body">
-                  <div
-                    class="card-title text-uppercase font-weight-bold"
-                    style="color: #e74c3c;"
-                  >
-                    Print Design
-                  </div>
-                  <div class="card-text text-light">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ip sum has been the industry's
-                    standard dummy text ever.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 d-flex services_card">
+              class="carousel-item h-100"
+              style="background-image: url('./images/services/web.png'); background-size: cover; background-position: center;"
+            ></div>
             <div
-              class="col-2 d-flex align-items-center justify-content-center pl-0 pr-0"
-            >
-              <div
-                class="squared rounded-circle service-3"
-              ></div>
-            </div>
-            <div class="col-10">
-              <div
-                class="card w-100 border-0"
-                style="background-color: #202020;"
-              >
-                <div class="card-body">
-                  <div
-                    class="card-title text-uppercase font-weight-bold"
-                    style="color: #e74c3c;"
-                  >
-                    Photography
-                  </div>
-                  <div class="card-text text-light">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ip sum has been the industry's
-                    standard dummy text ever.
-                  </div>
-                </div>
-              </div>
-            </div>
+              class="carousel-item h-100"
+              style="background-image: url('./images/services/web.png'); background-size: cover; background-position: center;"
+            ></div>
           </div>
         </div>
       </div>
