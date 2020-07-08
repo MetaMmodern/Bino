@@ -15,7 +15,14 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./boots_style.css" />
+    <link rel="stylesheet" href="./assets/css/boots_style.css" />
+    <link rel="stylesheet" href="./assets/css/style_stats.css" />
+    <link rel="stylesheet" href="./assets/css/style_pricing.css" />
+    <link rel="stylesheet" href="./assets/css/style_integrators.css" />
+    <link rel="stylesheet" href="./assets/css/style_blog.css" />
+    <link rel="stylesheet" href="./assets/css/style_contacts.css" />
+    <link rel="stylesheet" href="./assets/css/style_prefooter.css" />
+    <link rel="stylesheet" href="./assets/css/style_footer.css" />
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
@@ -37,71 +44,83 @@
     <title>Bino</title>
   </head>
   <body>
-    <nav
-      style="background: rgba(255, 255, 255, 0.329); backdrop-filter: blur(2px);"
-      class="navbar navbar-expand-md navbar-light fixed-top"
-    >
-      <div class="container-fluid text-uppercase ">
-        <a class="navbar-brand" href="./boots_index.html">
-          <img src="./images/Logo.png" alt="" height="30" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+    <header>
+      <nav
+        style="
+          background: rgba(255, 255, 255, 0.329);
+          backdrop-filter: blur(2px);
+          transition: padding 0.2s linear;
+        "
+        class="navbar navbar-expand-md navbar-light fixed-top"
+      >
+        <div class="container-fluid text-uppercase">
+          <a class="navbar-brand" href="./boots_index.html">
+            <img src="./assets/images/Logo.png" alt="" height="30" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#"
-                >Home <span class="sr-only">(current)</span></a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Team</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./index.html">Pure Version</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-          </ul>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav justify-content-between w-100">
+              <li class="nav-item active">
+                <a class="nav-link" href="#"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">Pure Version</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
     <div
       id="carouselExampleControls"
       class="carousel slide mh-100 carousel-clipped mb-5 pointer-event"
       data-ride="carousel"
     >
-      <div class="carousel-inner  mh-100">
+      <div class="carousel-inner mh-100">
         <div
           class="carousel-item mh-100 carousel-item-next carousel-item-left"
-          style="background-image: url(./images/Foreground.png); height: 95vh; background-size: cover;"
+          style="
+            background-image: url(./assets/images/Foreground.png),
+              linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+            height: 95vh;
+            background-size: cover;
+            background-blend-mode: overlay;
+          "
         >
           <div
             class="carousel-caption d-flex flex-column h-100 align-items-center justify-content-center"
           >
             <h2>Our clients are the first priority</h2>
             <h3>Welcome to Bino</h3>
-            <div class="copter"></div>
+            <div class="copter-light"></div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quod
               alias nesciunt voluptatibus, ducimus voluptate autem molestias.
@@ -112,14 +131,20 @@
         </div>
         <div
           class="carousel-item mh-100"
-          style="background-image: url(./images/Foreground.png); height: 95vh; background-size: cover;"
+          style="
+            background-image: url(./assets/images/Foreground.png),
+              linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+            background-blend-mode: overlay;
+            height: 95vh;
+            background-size: cover;
+          "
         >
           <div
             class="carousel-caption d-flex flex-column h-100 align-items-center justify-content-center"
           >
             <h2>Our clients are the first priority</h2>
             <h3>Welcome to Bino</h3>
-            <div class="copter"></div>
+            <div class="copter-light"></div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quod
               alias nesciunt voluptatibus, ducimus voluptate autem molestias.
@@ -130,14 +155,20 @@
         </div>
         <div
           class="carousel-item mh-100 active carousel-item-left"
-          style="background-image: url(./images/Foreground.png); height: 95vh; background-size: cover;"
+          style="
+            background-image: url(./assets/images/Foreground.png),
+              linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+            background-blend-mode: overlay;
+            height: 95vh;
+            background-size: cover;
+          "
         >
           <div
             class="carousel-caption d-flex flex-column h-100 align-items-center justify-content-center"
           >
             <h2>Our clients are the first priority</h2>
             <h3>Welcome to Bino</h3>
-            <div class="copter"></div>
+            <div class="copter-light"></div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quod
               alias nesciunt voluptatibus, ducimus voluptate autem molestias.
@@ -167,7 +198,7 @@
       </a>
     </div>
     <div class="anchor rounded-circle d-none d-sm-flex">
-      <img src="./images/anchor.svg" alt="anchor" />
+      <img src="./assets/images/anchor.svg" alt="anchor" />
     </div>
     <div class="container mb-5">
       <div class="row">
@@ -179,7 +210,7 @@
             >
               <div class="card_logo-border"></div>
               <img
-                src="./images/cards/glassses.svg"
+                src="./assets/images/cards/glassses.svg"
                 alt="..."
                 style="width: 60%; height: 60%;"
               />
@@ -204,7 +235,7 @@
             >
               <div class="card_logo-border"></div>
               <img
-                src="./images/cards/heart.svg"
+                src="./assets/images/cards/heart.svg"
                 alt="..."
                 style="width: 60%; height: 60%;"
               />
@@ -229,7 +260,7 @@
             >
               <div class="card_logo-border"></div>
               <img
-                src="./images/cards/lamp.svg"
+                src="./assets/images/cards/lamp.svg"
                 alt="..."
                 style="width: 60%; height: 60%;"
               />
@@ -254,7 +285,7 @@
             >
               <div class="card_logo-border"></div>
               <img
-                src="./images/cards/support.svg"
+                src="./assets/images/cards/support.svg"
                 alt=""
                 style="width: 60%; height: 60%;"
               />
@@ -276,7 +307,7 @@
       <div class="row">
         <div class="col-0 col-md-8 col-lg-7 col-xl-6 monitor mt-0">
           <img
-            src="./images/Monitor.png"
+            src="./assets/images/Monitor.png"
             alt="monitor"
             class="d-none h-100 d-md-block"
           />
@@ -317,7 +348,7 @@
       </div>
     </div>
     <div
-      class="container-fluid pt-3 pb-3 pt-md-4 pb-md-4 d-flex"
+      class="container-fluid pt-3 pb-3 pt-md-4 pb-md-4 d-flex mb-5"
       style="background-color: #202020;"
     >
       <div class="row">
@@ -339,7 +370,7 @@
             <div class="col-12">
               <div class="row">
                 <div class="col-11">
-                  <h3 class=" text-uppercase text-light services_title">
+                  <h3 class="text-uppercase text-light services_title">
                     Our Services
                   </h3>
                 </div>
@@ -355,7 +386,7 @@
                   </div>
                   <div class="col-10 col-sm-11">
                     <div
-                      class="card w-100 border-0  "
+                      class="card w-100 border-0"
                       style="background-color: #202020;"
                     >
                       <div class="card-body">
@@ -443,7 +474,8 @@
             margin-top: -1.5rem;
             margin-bottom: -1.5rem;
             margin-right: 0rem;
-            z-index: 1;"
+            z-index: 1;
+          "
         >
           <ol class="carousel-indicators d-none">
             <li
@@ -457,28 +489,660 @@
           <div class="carousel-inner h-100">
             <div
               class="carousel-item h-100 active"
-              style="background-image: url('./images/services/web.png'); background-size: cover; background-position: center;"
+              style="
+                background-image: url('./assets/images/services/web.png');
+                background-size: cover;
+                background-position: center;
+              "
             ></div>
             <div
               class="carousel-item h-100"
-              style="background-image: url('./images/services/web.png'); background-size: cover; background-position: center;"
+              style="
+                background-image: url('./assets/images/services/web.png');
+                background-size: cover;
+                background-position: center;
+              "
             ></div>
             <div
               class="carousel-item h-100"
-              style="background-image: url('./images/services/web.png'); background-size: cover; background-position: center;"
+              style="
+                background-image: url('./assets/images/services/web.png');
+                background-size: cover;
+                background-position: center;
+              "
             ></div>
           </div>
         </div>
       </div>
     </div>
+    <div class="container-fluid">
+      <div class="row text-center">
+        <div class="col-12">
+          <h2 class="text-uppercase">Recent Works</h2>
+        </div>
+        <div class="col-12 text-muted">
+          It has survived not only five centuries, but also the leap scrambled
+          it to make a type.
+        </div>
+        <div class="col-12">
+          <div class="copter-dark"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <ol class="breadcrumb justify-content-center bg-white">
+            <li class="breadcrumb-item">All</li>
+            <li class="breadcrumb-item"><a href="#">Print Design</a></li>
+            <li class="breadcrumb-item"><a href="#">Animation</a></li>
+            <li class="breadcrumb-item"><a href="#">Art</a></li>
+            <li class="breadcrumb-item"><a href="#">Web Design</a></li>
+            <li class="breadcrumb-item"><a href="#">Photography</a></li>
+            <li class="breadcrumb-item"><a href="#">Video</a></li>
+          </ol>
+        </div>
+      </div>
+      <div class="row w-5">
+        <div class="col-6 col-md-3 p-0">
+          <img src="./assets/images/works/1.png" alt="" class="w-100" />
+        </div>
+        <div class="col-6 col-md-3 p-0">
+          <img src="./assets/images/works/2.png" alt="" class="w-100" />
+        </div>
+        <div class="col-6 col-md-3 p-0">
+          <img src="./assets/images/works/3.png" alt="" class="w-100" />
+        </div>
+        <div class="col-6 col-md-3 p-0">
+          <img src="./assets/images/works/4.png" alt="" class="w-100" />
+        </div>
+        <div class="col-6 col-md-3 p-0">
+          <img src="./assets/images/works/5.png" alt="" class="w-100" />
+        </div>
+        <div class="col-6 col-md-3 p-0">
+          <img src="./assets/images/works/6.png" alt="" class="w-100" />
+        </div>
+        <div class="col-6 col-md-3 p-0">
+          <img src="./assets/images/works/7.png" alt="" class="w-100" />
+        </div>
+        <div class="col-6 col-md-3 p-0">
+          <img src="./assets/images/works/8.png" alt="" class="w-100" />
+        </div>
+      </div>
+    </div>
+    <div
+      class="container-fluid pl-5 pr-5 pt-5 pb-5"
+      style="background: #f4f5f9;"
+    >
+      <div class="row text-center">
+        <div class="col-12">
+          <h2 class="text-uppercase">Сase study</h2>
+        </div>
+        <div class="col-12 text-muted">
+          A brief story about lalalal
+        </div>
+        <div class="col-12 mt-2 mb-2">
+          <div class="copter-dark"></div>
+        </div>
+      </div>
+      <div id="storyCards">
+        <div class="storyText"></div>
+        <div class="storyImage"></div>
+      </div>
+    </div>
+    <div
+      class="container-fluid text-white p-3"
+      style="
+        background-image: url(./assets/images/stats.png),
+          linear-gradient(#4e4e4e50, #4e4e4e50);
+        background-size: cover;
+        background-blend-mode: overlay;
+        display: flex;
+        justify-content: center;
+      "
+    >
+      <div class="row w-100 pt-5 pb-5">
+        <div
+          class="col d-flex flex-column align-items-center mb-5 mb-sm-0 mb-md-0 text-center"
+        >
+          <div class="stats_image_border">
+            <img src="./assets/images/stats/1.png" alt="" class="stats_image" />
+          </div>
+
+          <div class="statsNumber font-weight-bold">3891</div>
+          <div class="statsType">User favorites</div>
+        </div>
+        <div
+          class="col d-flex flex-column align-items-center mb-5 mb-sm-0 mb-md-0 text-center"
+        >
+          <div class="stats_image_border">
+            <img src="./assets/images/stats/2.png" alt="" class="stats_image" />
+          </div>
+          <div class="statsNumber font-weight-bold">281</div>
+          <div class="statsType">Posts last 24 hours</div>
+        </div>
+        <div
+          class="col d-flex flex-column align-items-center mb-5 mb-sm-0 mb-md-0 text-center"
+        >
+          <div class="stats_image_border">
+            <img src="./assets/images/stats/3.png" alt="" class="stats_image" />
+          </div>
+          <div class="statsNumber font-weight-bold">681k</div>
+          <div class="statsType">Total posts</div>
+        </div>
+        <div
+          class="col d-flex flex-column align-items-center mb-5 mb-sm-0 mb-md-0 text-center"
+        >
+          <div class="stats_image_border">
+            <img src="./assets/images/stats/4.png" alt="" class="stats_image" />
+          </div>
+          <div class="statsNumber font-weight-bold">178</div>
+          <div class="statsType">Campaigns</div>
+        </div>
+        <div
+          class="col d-flex flex-column align-items-center mb-5 mb-sm-0 mb-md-0 text-center"
+        >
+          <div class="stats_image_border">
+            <img src="./assets/images/stats/5.png" alt="" class="stats_image" />
+          </div>
+          <div class="statsNumber font-weight-bold">285</div>
+          <div class="statsType">Amazing Features</div>
+        </div>
+      </div>
+    </div>
+    <!-- PRICING Container -->
+    <div class="container pt-5 pb-5">
+      <div class="row text-center mb-3">
+        <div class="col-12">
+          <h2 class="text-uppercase">Our Pricing</h2>
+        </div>
+        <div class="col-12 text-muted">
+          A 30 day free trial for all.
+        </div>
+        <div class="col-12 mt-2 mb-2">
+          <div class="copter-dark"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div
+          class="col-4 d-flex flex-column justify-content-center align-items-center price-card"
+        >
+          <div class="price-card-header">Starter</div>
+          <div class="price-card-body">
+            <div class="price-card-price">$19</div>
+            <div class="price-content">
+              <p>Competition Analysis Methods</p>
+              <p>All Ranked URLs</p>
+              <p>International Support System</p>
+              <p>Social Media Tracking</p>
+              <button class="btn text-uppercase mb-4">
+                Choose Plan
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-4 d-flex flex-column justify-content-center align-items-center price-card"
+        >
+          <div class="price-card-header">Premium</div>
+          <div class="price-card-body">
+            <div class="price-card-price">$39</div>
+            <div class="price-content">
+              <p>Competition Analysis Methods</p>
+              <p>All Ranked URLs</p>
+              <p>International Support System</p>
+              <p>Social Media Tracking</p>
+              <button class="btn text-uppercase mb-4">
+                Choose Plan
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-4 d-flex flex-column justify-content-center align-items-center price-card"
+        >
+          <div class="price-card-header">Business</div>
+          <div class="price-card-body">
+            <div class="price-card-price">$99</div>
+            <div class="price-content">
+              <p>Competition Analysis Methods</p>
+              <p>All Ranked URLs</p>
+              <p>International Support System</p>
+              <p>Social Media Tracking</p>
+              <button class="btn text-uppercase mb-4">
+                Choose Plan
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="container">Our Team</div> -->
+    <div
+      class="container-fluid p-5 border-bottom"
+      style="background-color: #f4f5f9;"
+    >
+      <div class="row text-center mb-3">
+        <div class="col-12">
+          <h2 class="text-uppercase">Great Integration with Others</h2>
+        </div>
+        <div class="col-12 text-muted">
+          Suspendisse sed eros mollis, tincidunt felis eget, interdum erat.
+          Nullam sit amet odio eu est aliquet euismod a a urna. Proin eu urna
+          suscipit, dictum quam nec.
+        </div>
+        <div class="col-12 mt-2 mb-2">
+          <div class="copter-dark"></div>
+        </div>
+      </div>
+      <div class="row integrators mb-3 pl-5 pr-5">
+        <div class="col-6 col-md integrator-card">
+          <div>
+            <img
+              class="integrator-card-logo"
+              src="./assets/images/integration/integrator (1).svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="col-6 col-md integrator-card">
+          <div>
+            <img
+              class="integrator-card-logo"
+              src="./assets/images/integration/integrator (2).svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="col-6 col-md integrator-card">
+          <div>
+            <img
+              class="integrator-card-logo"
+              src="./assets/images/integration/integrator (3).svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="col-6 col-md integrator-card">
+          <div>
+            <img
+              class="integrator-card-logo"
+              src="./assets/images/integration/integrator (4).svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="col-6 col-md integrator-card">
+          <div>
+            <img
+              class="integrator-card-logo"
+              src="./assets/images/integration/integrator (5).svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="col-md-12 d-none d-md-block"></div>
+        <div class="col-6 col-md integrator-card">
+          <div>
+            <img
+              class="integrator-card-logo"
+              src="./assets/images/integration/integrator (6).svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="col-6 col-md integrator-card">
+          <div>
+            <img
+              class="integrator-card-logo"
+              src="./assets/images/integration/integrator (7).svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="col-6 col-md integrator-card">
+          <div>
+            <img
+              class="integrator-card-logo"
+              src="./assets/images/integration/integrator (8).svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="col-6 col-md integrator-card">
+          <div>
+            <img
+              class="integrator-card-logo"
+              src="./assets/images/integration/integrator (9).svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="col-6 col-md integrator-card">
+          <div>
+            <img
+              class="integrator-card-logo"
+              src="./assets/images/integration/integrator (10).svg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="container-fluid pt-5 pr-0 pl-0 d-none d-md-block"
+      style="background-color: #f4f5f9;"
+    >
+      <div class="row text-center mb-3 mr-5 ml-5">
+        <div class="col-12">
+          <h2 class="text-uppercase">Our Blog</h2>
+        </div>
+        <div class="col-12 text-muted">
+          Suspendisse sed eros mollis, tincidunt felis eget, interdum erat.
+          Nullam sit amet odio eu est aliquet euismod a a urna. Proin eu urna
+          suscipit, dictum quam nec.
+        </div>
+        <div class="col-12 mt-2 mb-2">
+          <div class="copter-dark"></div>
+        </div>
+      </div>
+      <div class="row m-0 p-5 p-xl-0 blocks-row">
+        <div class="col-12 col-xl-6 p-0 squares-block order-1 order-xl-1">
+          <div class="row m-0 p-0">
+            <div class="col-6 p-0 square">
+              <div class="square-content p-0">
+                <img
+                  src="./assets/images/blog/1.png"
+                  alt=""
+                  class="square-image"
+                />
+              </div>
+            </div>
+            <div class="col-6 p-0 square">
+              <div class="square-content">
+                <div class="square-content-subhead">
+                  art/t-shirt
+                </div>
+                <div class="square-content-head">
+                  T-shirt Design
+                </div>
+                <div class="square-content-paragraph">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tenetur delectus possimus exercitationem quia, ipsa et illum
+                  doloribus id sunt cum nostrum quam quos rem autem maiores
+                  atque velit iure hic.
+                </div>
+                <a href="">Read More »</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-xl-6 p-0 squares-block order-3 order-xl-2">
+          <div class="row m-0 p-0">
+            <div class="col-6 p-0 square">
+              <div class="square-content p-0">
+                <img
+                  src="./assets/images/blog/2.png"
+                  alt=""
+                  class="square-image"
+                />
+              </div>
+            </div>
+            <div class="col-6 p-0 square">
+              <div class="square-content">
+                <div class="square-content-subhead">
+                  art/t-shirt
+                </div>
+                <div class="square-content-head">
+                  T-shirt Design
+                </div>
+                <div class="square-content-paragraph">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tenetur delectus possimus exercitationem quia, ipsa et illum
+                  doloribus id sunt cum nostrum quam quos rem autem maiores
+                  atque velit iure hic.
+                </div>
+                <a href="">Read More »</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-xl-6 p-0 squares-block order-2 order-xl-3">
+          <div class="row m-0 p-0">
+            <div class="col-6 p-0 square">
+              <div class="square-content">
+                <div class="square-content-subhead">
+                  art/t-shirt
+                </div>
+                <div class="square-content-head">
+                  T-shirt Design
+                </div>
+                <div class="square-content-paragraph">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tenetur delectus possimus exercitationem quia, ipsa et illum
+                  doloribus id sunt cum nostrum quam quos rem autem maiores
+                  atque velit iure hic.
+                </div>
+                <a href="">Read More »</a>
+              </div>
+            </div>
+            <div class="col-6 p-0 square">
+              <div class="square-content p-0">
+                <img
+                  src="./assets/images/blog/3.png"
+                  alt=""
+                  class="square-image"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-xl-6 p-0 squares-block order-4 order-xl-4">
+          <div class="row m-0 p-0">
+            <div class="col-6 p-0 square">
+              <div class="square-content">
+                <div class="square-content-subhead">
+                  art/t-shirt
+                </div>
+                <div class="square-content-head">
+                  T-shirt Design
+                </div>
+                <div class="square-content-paragraph">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tenetur delectus possimus exercitationem quia, ipsa et illum
+                  doloribus id sunt cum nostrum quam quos rem autem maiores
+                  atque velit iure hic.
+                </div>
+                <a href="">Read More »</a>
+              </div>
+            </div>
+            <div class="col-6 p-0 square">
+              <div class="square-content p-0">
+                <img
+                  src="./assets/images/blog/4.png"
+                  alt=""
+                  class="square-image"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid pt-3 pl-5 pr-5 contacts">
+      <div class="row text-center">
+        <div class="col-12">
+          <h2 class="text-uppercase">Keep in Touch</h2>
+        </div>
+        <div class="col-12 text-muted">
+          Suspendisse sed eros mollis, tincidunt felis eget, interdum erat.
+          Nullam sit amet odio eu est aliquet euismod a a urna. Proin eu urna
+          suscipit, dictum quam nec.
+        </div>
+        <div class="col-12 mt-2 mb-2">
+          <div class="copter-dark"></div>
+        </div>
+      </div>
+      <div class="row justify-content-center pb-5 mt-5">
+        <div class="col-4 contact-info bg-light">
+          <div class="mb-5">
+            <div class="contact-type">Our adress</div>
+            <div class="contact-subinfo">
+              House #13, Streat road, Sydney 2310 Australia
+            </div>
+          </div>
+          <div class="mb-5">
+            <div class="contact-type">Call us</div>
+            <div class="contact-subinfo">
+              <p>+ 880 168 109 1425</p>
+              <p>+ 0216809142</p>
+            </div>
+          </div>
+          <div class="mb-5">
+            <div class="contact-type">Email us</div>
+            <div class="contact-subinfo">contactus@email.com</div>
+          </div>
+        </div>
+        <div class="col-6 contact-form bg-light">
+          <form action="" class="form">
+            <input
+              type="text"
+              name=""
+              id=""
+              class="form-control"
+              placeholder="Name"
+            />
+            <input
+              type="text"
+              name=""
+              id=""
+              class="form-control"
+              placeholder="Email"
+            />
+            <input
+              type="text"
+              name=""
+              id=""
+              class="form-control"
+              placeholder="Subject"
+            />
+            <textarea
+              name=""
+              id=""
+              class="form-control"
+              placeholder="Message"
+              style="height: 100%;"
+              rows="10"
+            ></textarea>
+            <button
+              type="submit"
+              class="btn"
+              style="background-color: #e74c3c; color: white;"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid prefooter">
+      <div class="prefooter-header text-center">
+        Let's Get Started Now. It's FREE!
+      </div>
+      <div class="prefooter-subheader text-center">
+        30 day free trial. Free plan allows up to 2 projects. Pay if you need
+        more. Cancel anytime. No catches.
+      </div>
+      <button class="btn" style="background-color: #e74c3c; color: white;">
+        Start free trial
+      </button>
+    </div>
+    <footer
+      class="container-fluid d-flex align-items-center justify-content-center"
+    >
+      <div class="row justify-content-center w-100 align-items-center">
+        <div class="col-12 col-md-5 contact-links mb-3 mb-md-0">
+          <div class="row align-items-center justify-content-center">
+            <div
+              class="col-3 col-md-1 mb-3 mb-md-0 d-flex align-items-center justify-content-center"
+            >
+              <a href="#"
+                ><img src="./assets/images/contact_links/facebook.svg" alt=""
+              /></a>
+            </div>
+            <div
+              class="col-3 col-md-1 mb-3 mb-md-0 d-flex align-items-center justify-content-center"
+            >
+              <a href="#"
+                ><img src="./assets/images/contact_links/twitter.svg" alt=""
+              /></a>
+            </div>
+            <div
+              class="col-3 col-md-1 mb-3 mb-md-0 d-flex align-items-center justify-content-center"
+            >
+              <a href="#"
+                ><img src="./assets/images/contact_links/rss.svg" alt=""
+              /></a>
+            </div>
+            <div
+              class="col-3 col-md-1 mb-3 mb-md-0 d-flex align-items-center justify-content-center"
+            >
+              <a href="#"
+                ><img
+                  src="./assets/images/contact_links/google-plus.svg"
+                  alt=""
+              /></a>
+            </div>
+            <div
+              class="col-3 col-md-1 mb-3 mb-md-0 d-flex align-items-center justify-content-center"
+            >
+              <a href="#"
+                ><img src="./assets/images/contact_links/linkedin.svg" alt=""
+              /></a>
+            </div>
+            <div
+              class="col-3 col-md-1 mb-3 mb-md-0 d-flex align-items-center justify-content-center"
+            >
+              <a href="#"
+                ><img src="./assets/images/contact_links/skype.svg" alt=""
+              /></a>
+            </div>
+            <div
+              class="col-3 col-md-1 mb-3 mb-md-0 d-flex align-items-center justify-content-center"
+            >
+              <a href="#"
+                ><img src="./assets/images/contact_links/vimeo.svg" alt=""
+              /></a>
+            </div>
+            <div
+              class="col-3 col-md-1 mb-3 mb-md-0 d-flex align-items-center justify-content-center"
+            >
+              <a href="#"
+                ><img src="./assets/images/contact_links/tumblr.svg" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 text-center mt-5 mt-md-0">
+          Random Name &#169; All rights reserved
+        </div>
+      </div>
+      <div class="up-button"><a href="#"></a></div>
+    </footer>
     <script>
-      $(".carousel_service").on("slid.bs.carousel", function() {
+      $(".carousel_service").on("slid.bs.carousel", function () {
         $(".carousel-custom-indicators li").removeClass("active_service");
         indicators = $(".carousel-indicators li.active").data("slide-to");
         a = $(".carousel-custom-indicators")
           .find("[data-slide-to='" + indicators + "']")
           .addClass("active_service");
         console.log(indicators);
+      });
+      $(window).scroll(function () {
+        var position = $(this).scrollTop();
+        if (position >= 200) {
+          $(".navbar").addClass("custom-navbar");
+        } else {
+          $(".navbar").removeClass("custom-navbar");
+        }
       });
     </script>
   </body>

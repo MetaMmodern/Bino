@@ -10,11 +10,10 @@ body {
   width: 100%;
   overflow-x: hidden;
 }
-
 header {
   width: 100vw;
   background: linear-gradient(to bottom, #000000a9, #000000a9),
-    url(./images/Foreground.png);
+    url("../images/Foreground.png");
   background-size: cover;
   clip-path: polygon(0 0, 0 80vh, 50% 100%, 100% 80vh, 100% 0);
   height: 95vh;

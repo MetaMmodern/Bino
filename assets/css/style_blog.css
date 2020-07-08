@@ -1,0 +1,105 @@
+.square:before {
+  content: "";
+  display: block;
+  padding-top: 100%; /*initial ratio of 1:1*/
+}
+
+.square {
+  box-shadow: inset 1px 1px 5px black;
+}
+
+.square-content {
+  position: absolute;
+  top: 0;
+  background-color: #e74e3e;
+  height: 100%;
+  width: 100%;
+  color: white;
+  padding: 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.square-content-subhead {
+  font-size: 11px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.square-content-head {
+  font-size: 18px;
+  font-family: "Source Sans Pro", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.square-content-head:after {
+  content: "";
+  position: absolute;
+  bottom: -1rem;
+  left: 0;
+  width: 20%;
+  height: 30%;
+  background-color: white;
+}
+
+.square-content-paragraph {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 1rem;
+}
+
+.square a {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  text-decoration: none;
+  font-style: italic;
+  color: inherit;
+}
+
+.square a:hover {
+  text-decoration: underline;
+}
+
+.square-image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.square-image:nth-child(even) {
+}
+
+.squares-block:nth-child(1) img {
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 40%,
+    90% 50%,
+    100% 60%,
+    100% 100%,
+    0% 100%
+  );
+}
+.squares-block:nth-child(2) img {
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 40%,
+    90% 50%,
+    100% 60%,
+    100% 100%,
+    0% 100%
+  );
+}
+.squares-block:nth-child(3) img {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%, 0% 60%, 10% 50%, 0% 40%);
+}
+.squares-block:nth-child(4) img {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%, 0% 60%, 10% 50%, 0% 40%);
+}

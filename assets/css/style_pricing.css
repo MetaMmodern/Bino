@@ -1,0 +1,68 @@
+h2 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: bold;
+  color: #6a6a6a;
+}
+
+.price-card {
+  background-color: #f4f5f9;
+  background-clip: content-box;
+  padding: 0 2rem;
+}
+.price-card-header {
+  padding-bottom: 5rem;
+  padding-top: 1rem;
+  font-size: 2rem;
+  font-family: "Open Sans", sans-serif;
+  background-color: #999999;
+  color: white;
+  width: 100%;
+  text-align: center;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.price-card-price {
+  position: relative;
+  top: -3.5rem;
+  font-size: 2rem;
+  border-radius: 50%;
+  /* padding: 2rem; */
+  background: white;
+  height: 7rem;
+  width: 7rem;
+  /* text-align: center; */
+  /* vertical-align: middle; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  color: #999999;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: bold;
+  box-shadow: 0 0 0 0.8rem rgba(244, 245, 249, 0.25);
+  transition: color 0.15s ease-in-out;
+}
+
+.price-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -2.5rem;
+  text-align: center;
+}
+
+.price-content .btn {
+  background-color: #999999;
+  color: white;
+}
+
+.price-card:hover .price-card-header {
+  background: #e74c3c;
+}
+.price-card:hover .price-card-price {
+  color: #e74c3c;
+}
+
+.price-card:hover .btn {
+  background: #e74c3c;
+}

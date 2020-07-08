@@ -1,12 +1,17 @@
-.copter {
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,700&family=Source+Sans+Pro:wght@400;700&display=swap");
+
+.custom-navbar {
+  padding: 0px 1rem;
+}
+.copter-light {
   height: 7px;
   width: 7px;
   border-radius: 50%;
   background-color: #e74c3c;
-  margin: 4.2vh auto;
+  margin: 0.5rem auto;
   position: relative;
 }
-.copter::before {
+.copter-light::before {
   content: "";
   display: block;
   width: 6vw;
@@ -16,13 +21,41 @@
   left: 15px;
   top: 50%;
 }
-.copter::after {
+.copter-light::after {
   content: "";
   display: block;
   width: 6vw;
   position: absolute;
   height: 1px;
   background-color: #f4f5f9;
+  right: 15px;
+  top: 50%;
+}
+.copter-dark {
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  background-color: #e74c3c;
+  margin: 0.5rem auto;
+  position: relative;
+}
+.copter-dark::before {
+  content: "";
+  display: block;
+  width: 6vw;
+  position: absolute;
+  height: 1px;
+  background-color: #999999;
+  left: 15px;
+  top: 50%;
+}
+.copter-dark::after {
+  content: "";
+  display: block;
+  width: 6vw;
+  position: absolute;
+  height: 1px;
+  background-color: #999999;
   right: 15px;
   top: 50%;
 }
@@ -144,13 +177,13 @@
 }
 
 .service-1 {
-  background-image: url("./images/services/monitor.svg");
+  background-image: url("../images/services/monitor.svg");
 }
 .service-2 {
-  background-image: url("./images/services/layers.svg");
+  background-image: url("../images/services/layers.svg");
 }
 .service-3 {
-  background-image: url("./images/services/camera.svg");
+  background-image: url("../images/services/camera.svg");
 }
 
 @media (min-width: 576px) {
@@ -164,6 +197,10 @@
     padding-right: 25px;
     margin-right: 2rem;
   }
+}
+
+.carousel h2 {
+  color: white;
 }
 
 .carousel-indicators .active_service {
