@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,700&family=Source+Sans+Pro:wght@400;700&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
 .custom-navbar {
   padding: 0px 1rem;
 }

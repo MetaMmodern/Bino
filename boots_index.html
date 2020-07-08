@@ -649,7 +649,7 @@
       </div>
     </div>
     <!-- PRICING Container -->
-    <div class="container pt-5 pb-5">
+    <div class="container pt-5 pb-5 d-md-block d-none">
       <div class="row text-center mb-3">
         <div class="col-12">
           <h2 class="text-uppercase">Our Pricing</h2>
@@ -733,7 +733,7 @@
           <div class="copter-dark"></div>
         </div>
       </div>
-      <div class="row integrators mb-3 pl-5 pr-5">
+      <div class="row integrators mb-3 pl-md-5 pr-md-5">
         <div class="col-6 col-md integrator-card">
           <div>
             <img
@@ -982,7 +982,7 @@
         </div>
       </div>
       <div class="row justify-content-center pb-5 mt-5">
-        <div class="col-4 contact-info bg-light">
+        <div class="col-lg-4 col-12 order-lg-0 order-1 contact-info bg-light">
           <div class="mb-5">
             <div class="contact-type">Our adress</div>
             <div class="contact-subinfo">
@@ -1001,7 +1001,7 @@
             <div class="contact-subinfo">contactus@email.com</div>
           </div>
         </div>
-        <div class="col-6 contact-form bg-light">
+        <div class="col-lg-6 col-12 order-lg-1 order-0 contact-form bg-light">
           <form action="" class="form">
             <input
               type="text"
@@ -1125,7 +1125,9 @@
           Random Name &#169; All rights reserved
         </div>
       </div>
-      <div class="up-button"><a href="#"></a></div>
+      <div class="up-button">
+        <a href="#"><img src="./assets/images/to-top.svg" alt="" /></a>
+      </div>
     </footer>
     <script>
       $(".carousel_service").on("slid.bs.carousel", function () {
@@ -1134,7 +1136,6 @@
         a = $(".carousel-custom-indicators")
           .find("[data-slide-to='" + indicators + "']")
           .addClass("active_service");
-        console.log(indicators);
       });
       $(window).scroll(function () {
         var position = $(this).scrollTop();

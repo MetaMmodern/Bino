@@ -43,3 +43,15 @@ footer {
   border-radius: 50%;
   background-color: #e74c3c;
 }
+
+.up-button a {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: -0.08rem; */
+}
+.up-button a img {
+  max-width: 40%;
+}
